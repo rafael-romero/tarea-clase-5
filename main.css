@@ -18,6 +18,11 @@ body{
     border-color: red;
 }
 
+#ejercicioTarea{
+    background-color: yellow;
+    color: blue;
+}
+
 footer{
     background-color: yellow;
     color: blue;

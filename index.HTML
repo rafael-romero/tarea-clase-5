@@ -1,13 +1,14 @@
 
 <!DOCTYPE html>
 <html lang='esp'>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Ejercicio Practico Clase Nº5, esto va de titulo en la etiqueta de la pestaña</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' href='main.css'></link>
 </head>
 <body>
     <header>
@@ -26,11 +27,27 @@
     <br>
     <br>
 
+    <div id='ejercicioTarea'>
+        <form>
+            <input type='text' placeholder="Ingresa tu nombre" id="nombreUsuario"/>
+            <input type='number' placeholder="Ingresa tu sueldo mensual" id="sueldoMensual"/>
+            <button id="botonCalcular">Calcular mi sueldo en diferentes periodos de tiempo </button>        
+        </form>
+
+        <p id="sueldoPorAño"></p>
+        <p id="sueldoPorSemana"></p>
+        <p id="sueldoPorDia"></p>
+        <p id="sueldoPorHora"></p>
+        <p id='nombre'></p>
+    </div>
+
+
     <div>
         <p>
             <h4>Este es un segundo titulo que pongo a modo de prueba con otro color y otro tipo de letra</h4>
         </p>
     </div>
+
     <br>
     <br>
     <footer>
@@ -42,6 +59,6 @@
         </div>
     </footer>
 
-    <script src='index.js'></script>
+    <script src='clase5.js'></script>
 </body>
 </html>
