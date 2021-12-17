@@ -13,14 +13,23 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.primer_parrafo{
+    font-size: 30px;
+    border-color: red;
+}
+
 footer{
     background-color: yellow;
     color: blue;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+h1{
+    font-size: 40px;
+} 
+
 h4{
     color: greenyellow;
     font-style: italic;
-    font-size: x-large;
+    font-size: xx-large;
 }
