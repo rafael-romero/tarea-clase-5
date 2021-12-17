@@ -1,0 +1,26 @@
+html, body{
+    margin:0;
+    padding: 0;
+}
+
+html{
+    color: #ffffff;
+}
+
+body{
+    text-align: center;
+    background-color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer{
+    background-color: yellow;
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h4{
+    color: greenyellow;
+    font-style: italic;
+    font-size: x-large;
+}
