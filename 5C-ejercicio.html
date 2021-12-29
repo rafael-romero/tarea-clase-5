@@ -25,7 +25,6 @@
                 <dd>Usted debe usar el formulario de abajo para ingresar el tiempo sobre cada video.<br>
                 Ingresara numeros enteros en cada campo segun corresponda (hora, minuto, segundo).<br>
                 Luego de eso debera apretar el boton debajo para <i>'Registrar su respuesta'</i>.<br>
-                Si desea agregar un nuevo video, debe apretar el boton contiguo para <i>'Resetear el formulario'</i> y poder ingresar nuevamente el tiempo de un nuevo<br>
                 <br>
                 Por ultimo si no desea agregar mas videos puede presionar el boton <i>Calcular Tiempo Total</i> para saber la duracion total de todos los videos.
                 </dd>
@@ -37,18 +36,18 @@
         <form>
             <fieldset>
                 <legend>Tiempo del video</legend>
-                <label>Ingresa horas: <input type="Number" id='horasVideo'/></label><br>
-                <label>Ingresa minutos: <input type="Number" id='minutosVideo'/></label><br>
-                <label>Ingresa segundos: <input type="number" id='segundosVideo'/></label><br>
-                <input type="submit" id="registroTiempoVideo" value="Aprete este boton para registrar su respuesta">
-                <!-- la funcionalidad tiene que estar implementada al dar click en registrar respuesta antes de que use el proximo boton para resetear los datos-->
+                <label>Ingresa horas: <input type="Number" id='horas-video'/></label><br>
+                <label>Ingresa minutos: <input type="Number" id='minutos-video'/></label><br>
+                <label>Ingresa segundos: <input type="number" id='segundos-video'/></label><br>
+                <input type="submit" id="registro-tiempo-video" value="Aprete este boton para registrar su respuesta">
+                <label>Apriete se desea ingresar mas videos <input type="reset" id="volver-a-cero"  /> </label><br>
                 
             </fieldset>
-            <button type="button" id="calcularTiempoTotal" >Calcular Tiempo Total</button><br>
+            <button type="button" id="calcular-tiempo-total" >Calcular Tiempo Total</button><br>
         </form>
     </main>
     <footer>
-        <p id="tiempoTotal"><strong></strong></p>
+        <strong id="tiempo-total"></strong>
     </footer>
 
     <script src='5C-ejercicio.js'></script>
