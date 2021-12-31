@@ -23,7 +23,7 @@ $botonCalcularPromedio.onclick = function(){
     for(let i = 0; i<arregloDeNumeros.length; i++){
         sumaTotalNumeros += arregloDeNumeros[i];
     }    
-    promedio = sumaTotalNumeros/arregloDeNumeros.length;
+    promedio = (sumaTotalNumeros/arregloDeNumeros.length).toFixed(2);
     document.querySelector('#promedio').innerText = String(promedio);
     return false
 }
@@ -52,7 +52,27 @@ $botonCalcularNumeroMasGrande.onclick = function(){
     return false
 }
 
+const $botonCalcularNumeroMasFrecuente = document.querySelector('#calcular-numero-mas-frecuente'); 
+$botonCalcularNumeroMasFrecuente.onclick = function(){
+    let numeroMasFrecuente;
+    let masVecesRepetido = 0;
+    for(let i = 0; i<arregloDeNumeros.length; i++){
+        let vecesRepetido = 0;
+        const numeroAComparar = arregloDeNumeros[i];
+        for (let j = i+1; j<arregloDeNumeros.length; j++){
+            if (arregloDeNumeros[j] === numeroAComparar){
+                vecesRepetido++;
+            }
+        }
+        if (vecesRepetido>masVecesRepetido){
+            masVecesRepetido = vecesRepetido;
+            numeroMasFrecuente = arregloDeNumeros[i];
+            
+        }
+    }
 
-
+    document.querySelector('#numero-mas-frecuente').innerText = String(numeroMasFrecuente);
+    return false
+}
 
 
