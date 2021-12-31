@@ -7,14 +7,7 @@ function armarArregloConNumerosLi(nodeElemento){
 }
 
 const $numerosDeListaLi = document.querySelectorAll('li');
-//console.log(numerosDeListaLi[0].innerText);
-//console.log(numerosDeListaLi[1].innerText);
-//console.log(numerosDeListaLi[2].innerText);
 const arregloDeNumeros = armarArregloConNumerosLi($numerosDeListaLi);
-
-//for(i=0; i<arregloDeNumeros.length; i++){
-//    console.log(arregloDeNumeros[i].innerText);
-//}
 
 const $botonCalcularPromedio = document.querySelector('#calcular-promedio');
 $botonCalcularPromedio.onclick = function(){
@@ -70,9 +63,7 @@ $botonCalcularNumeroMasFrecuente.onclick = function(){
             
         }
     }
-
     document.querySelector('#numero-mas-frecuente').innerText = String(numeroMasFrecuente);
     return false
 }
-
 
