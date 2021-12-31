@@ -6,10 +6,13 @@ function armarArregloConNumerosLi(nodeElemento){
     return arreglo;
 }
 
-const numerosDeListaLi = document.querySelectorAll('li');
-const arregloDeNumeros = armarArregloConNumerosLi(numerosDeListaLi);
+const $numerosDeListaLi = document.querySelectorAll('li');
+//console.log(numerosDeListaLi[0].innerText);
+//console.log(numerosDeListaLi[1].innerText);
+//console.log(numerosDeListaLi[2].innerText);
+const arregloDeNumeros = armarArregloConNumerosLi($numerosDeListaLi);
 
-console.log(arregloDeNumeros);
+
 //for(i=0; i<arregloDeNumeros.length; i++){
 //    console.log(arregloDeNumeros[i].innerText);
 //}
@@ -25,3 +28,4 @@ $botonCalcularPromedio.onclick = function(){
     document.querySelector('#promedio').innerText = String (promedio);
     return false;
 }
+
