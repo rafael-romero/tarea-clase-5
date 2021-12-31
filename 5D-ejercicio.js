@@ -3,7 +3,7 @@ function armarArregloConNumerosLi(nodeElemento){
     for(let i = 0; i<nodeElemento.lenght; i++){
         arreglo.push(Number(nodeElemento[i].innerText));
     }
-    return arreglo;
+    return arreglo
 }
 
 const $numerosDeListaLi = document.querySelectorAll('li');
@@ -26,6 +26,23 @@ $botonCalcularPromedio.onclick = function(){
     }    
     promedio = sumaTotalNumeros/arregloDeNumeros.length;
     document.querySelector('#promedio').innerText = String (promedio);
-    return false;
+    return false
 }
+
+const $botonCalcularNumeroMasPequenio = document.querySelector('#calcular-numero-mas-pequenio');
+$botonCalcularNumeroMasPequenio.onclick = function(){
+    let numeroMasPequenio = arregloDeNumeros[0];
+    for(let i=1; i<arregloDeNumeros.length; i++){
+        if (arregloDeNumeros[i]<numeroMasPequenio){
+            numeroMasPequenio = arregloDeNumeros[i];
+        }
+    }
+    document.querySelector('#numero-mas-pequenio').innerText = String(numeroMasPequenio);
+    return false
+}
+
+
+
+
+
 
