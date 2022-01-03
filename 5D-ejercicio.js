@@ -6,8 +6,8 @@ function obtenerNumeros(numerosDeListado){
     return arreglo
 }
 
-const $numerosDeListaLi = document.querySelectorAll('li');
-const arregloDeNumeros = obtenerNumeros($numerosDeListaLi);
+const $numeros = document.querySelectorAll('li');
+const arregloDeNumeros = obtenerNumeros($numeros);
 
 const $botonCalcularPromedio = document.querySelector('#calcular-promedio');
 $botonCalcularPromedio.onclick = function(){
