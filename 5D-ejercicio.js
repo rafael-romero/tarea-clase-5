@@ -60,7 +60,6 @@ $botonCalcularNumeroMasFrecuente.onclick = function(){
         if (vecesRepetido>masVecesRepetido){
             masVecesRepetido = vecesRepetido;
             numeroMasFrecuente = arregloDeNumeros[i];
-            
         }
     }
     document.querySelector('#numero-mas-frecuente').innerText = String(numeroMasFrecuente);
