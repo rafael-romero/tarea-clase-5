@@ -1,13 +1,13 @@
-function armarArregloConNumerosLi(nodeElemento){
+function obtenerNumeros(numerosDeListado){
     const arreglo=[];
-    for(let i = 0; i<nodeElemento.length; i++){
-        arreglo.push(Number(nodeElemento[i].innerText));
+    for(let i = 0; i<numerosDeListado.length; i++){
+        arreglo.push(Number(numerosDeListado[i].innerText));
     }
     return arreglo
 }
 
 const $numerosDeListaLi = document.querySelectorAll('li');
-const arregloDeNumeros = armarArregloConNumerosLi($numerosDeListaLi);
+const arregloDeNumeros = obtenerNumeros($numerosDeListaLi);
 
 const $botonCalcularPromedio = document.querySelector('#calcular-promedio');
 $botonCalcularPromedio.onclick = function(){
