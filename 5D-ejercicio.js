@@ -17,7 +17,7 @@ $botonCalcularPromedio.onclick = function(){
         sumaTotalNumeros += arregloDeNumeros[i];
     }    
     promedio = (sumaTotalNumeros/arregloDeNumeros.length).toFixed(2);
-    document.querySelector('#promedio').innerText = String(promedio);
+    document.querySelector('#promedio').innerText = promedio;
     return false
 }
 
