@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>5D Ejercicio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="TAREA: En otro archivo distinto,
+    Crear una lista de <ol> y <li> que contengan sólo números.Convertir esos números a un array y:
+    1. calcular el promedio y mostrarlo en un <em> pre-creado con el texto El promedio es...
+    2. obtener el número más pequeño y mostrarlo en un <em> pre-creado con el texto 'El número más pequeño es...'
+    3. obtener el número más grande y mostrarlo en un <em> pre-creado con el texto 'El número más grande es...'
+    4. obtener el número que más se repite y mostrarlo en un <em> pre-creado con el texto 'El número más frecuente es...' ">
+    <meta name="autor" content="Rafael Romero">
+	<link rel=author href="rafa_710@hotmail.com" >    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="5D-ejercicio.css">
+</head>
+<body class="bg-primary">
+    <header>
+        <p class="font-monospace fs-1">Numeros de una OL utilizados para este ejercicio</p>
+    </header>
+    <main>
+        <ol>
+            <li>120</li>
+            <li>15</li>
+            <li>65</li>
+            <li>150</li>
+            <li>34</li>
+            <li>77</li>
+            <li>15</li>
+            <li>32</li>
+            <li>4</li>
+            <li>34</li>
+            <li>34</li>
+            <li>3</li>
+        </ol>
+
+        <fieldset>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </symbol>
+            </svg>
+
+            <button id="calcular-promedio" class="btn btn-outline-warning">Calcular promedio de Numeros</button>
+            
+            <div class="alert alert-success d-flex align-items-center" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                <div>
+                    <p id="promedio"><em>El promedio es:</em></p>
+                </div>
+            </div>
+
+
+            <button id="calcular-numero-mas-pequenio" class="btn btn-outline-warning">Calcular el numero mas pequeño</button>
+            <div class="alert alert-success d-flex align-items-center" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                <div>
+                    <p id="numero-mas-pequenio"><em>El numero mas pequeño es: </em></p>
+                </div>
+            </div>
+
+
+            <button id="calcular-numero-mas-grande" class="btn btn-outline-warning">Calcular el numero mas grande</button>
+            <div class="alert alert-success d-flex align-items-center" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                <div>
+                    <p id="numero-mas-grande"><em>El numero mas grande es: </em></p>
+                </div>
+            </div>
+            
+            <button id="calcular-numero-mas-frecuente" class="btn btn-outline-warning">Calcular el numero mas frecuente</button>
+            <div class="alert alert-success d-flex align-items-center" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                <div>
+                    <p id="numero-mas-frecuente"><em>El numero mas frecuente es: </em></p>
+                </div>
+            </div>
+           
+            
+
+        </fieldset>
+    </main>
+       
+    <script src="5D-ejercicio.js"></script>
+</body>
+</html>
+
