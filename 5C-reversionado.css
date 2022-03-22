@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+    color: white;
+    background-color: blueviolet;
+    margin-left: 15px;
+}
+
+#boton-cargar{
+    color: white;
+    font-size: large;
+    background-color: cornflowerblue;
+}
