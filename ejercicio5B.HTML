@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>5-B-Ejercicio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Bienvenido!</h1>
+
+    <form>
+        <div class="row g-4">
+            <div class="col-sm">
+              <input type="text" class="form-control" placeholder="Ingrese su nombre" aria-label="Ingrese su nombre" id='primerNombreUsuario'>
+            </div>
+            <div class="col-sm">
+              <input type="text" class="form-control" placeholder="Ingrese su segundo nombre" aria-label="Ingrese su segundo nombre" id='segundoNombreUsuario'>
+            </div>
+            <div class="col-sm">
+              <input type="text" class="form-control" placeholder="Ingrese su apellido" aria-label="Ingrese su apellido" id='apellidoUsuario'>
+            </div>
+            <div class="col-sm">
+                <input type="number" class="form-control" placeholder="Ingrese su edad" aria-label="Ingrese su edad" id='edadUsuario'/>
+            </div>
+        </div><br><br>
+        <button id="mostrarInformacionJunta" class="btn btn-primary btn-lg">Mostrar toda mi informacion de Usuario junta. </button><br><br>
+    </form>
+ 
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+      </symbol>
+    </svg>
+    <div class="alert alert-primary d-flex align-items-center" role="alert">
+      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+      <div>
+        <p id="todaInformacionJunta"></p>
+      </div>
+    </div>
+    
+    <script src='ejercicio5B.js'></script>
+</body>
+</html>
+

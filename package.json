@@ -1,0 +1,22 @@
+{
+  "name": "apuntes-argentina-programa",
+  "version": "1.0.0",
+  "description": "ejercicio 5B con bootstrap",
+  "main": "ejercicio5B.HTML",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafael-romero/tarea-clase-5.git"
+  },
+  "author": "rafael romero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafael-romero/tarea-clase-5/issues"
+  },
+  "homepage": "https://github.com/rafael-romero/tarea-clase-5#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
