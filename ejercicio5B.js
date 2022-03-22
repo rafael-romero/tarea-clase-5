@@ -8,6 +8,6 @@ $mostrarInformacionJunta.onclick=function(){
 
     
     document.querySelector('#todaInformacionJunta').innerText=`Su nombre completo es: ${nombreUsuario1} ${nombreUsuario2} ${nombreUsuario3} y su edad es: ${edadUsuario}`;
-    document.querySelector('h1').innerText='Bienvenido, '+nombreUsuario1+'!';
+    document.querySelector('h1').innerText='Bienvenido '+nombreUsuario1+'!';
     return false;
 }
