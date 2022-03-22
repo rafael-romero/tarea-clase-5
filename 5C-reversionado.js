@@ -28,7 +28,7 @@ $botonCargar.onclick = function () {
   }
   if (minutosDeLasClases >= segundosPorMinuto) {
     horasAuxiliar = Math.trunc(minutosDeLasClases / segundosPorMinuto);
-    horas = horas + horasAuxiliar;
+    horasDeLasClases = horasDeLasClases + horasAuxiliar;
     minutosDeLasClases = minutosDeLasClases - horasAuxiliar * segundosPorMinuto;
   }
 

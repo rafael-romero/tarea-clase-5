@@ -1,19 +1,12 @@
-html{
-    color: white;
-    background-color: blueviolet;
-}
-
 body{
     text-align: center;
-}
-
-header{
-    font-size:xx-large;     
+    color: white;
+    background-color: blueviolet;
+    margin-left: 15px;
 }
 
 #boton-cargar{
     color: white;
-    font-size: xx-large;
+    font-size: large;
     background-color: cornflowerblue;
 }
-
