@@ -1,0 +1,19 @@
+html{
+    color: white;
+    background-color: blueviolet;
+}
+
+body{
+    text-align: center;
+}
+
+header{
+    font-size:xx-large;     
+}
+
+#boton-cargar{
+    color: white;
+    font-size: xx-large;
+    background-color: cornflowerblue;
+}
+
